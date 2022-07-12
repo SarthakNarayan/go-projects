@@ -2,9 +2,14 @@ package main
 
 import (
 	// "example/design-patterns/single-responsibility"
+	"example/design-patterns/interface-segregation"
 	"example/design-patterns/open-closed"
 	"fmt"
 )
+
+func isp_execute() {
+	isp.Test()
+}
 
 func ocp_execute() {
 	myFilter := ocp.Filter{}
@@ -26,5 +31,5 @@ func specification_execute() {
 
 func main() {
 	fmt.Println("Main function was run")
-	specification_execute()
+	isp_execute()
 }
